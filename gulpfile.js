@@ -30,6 +30,7 @@ $.gulp.task('default', $.gulp.series(
     'css:foundation',
     'sprite:svg',
     'imageMin',
+    'copyfonts',
     'sprite'
   ),
   $.gulp.parallel(

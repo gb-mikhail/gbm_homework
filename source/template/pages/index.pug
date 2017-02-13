@@ -1,7 +1,27 @@
-extends ../_template
+include ../_template.pug
 
-block variables
-  - var title = 'Home page'
+header.header-main
+    .header-main__social-icons
+        .header-main__social-icons_vk
+            a(href="#")
+                svg.vk
+        .header-main__social-icons_git
+            a(href="#")
+                svg.git
+        .header-main__social-icons_in
+            a(href="#")
+                svg.in
 
-block content
-  include ../common/_greating
+    .header-main__right-line
+    .header-main__left-line
+
+content.main-content
+    .main-content__left-block
+    .main-content__right-block
+
+
+
+footer.footer
+
+
+
