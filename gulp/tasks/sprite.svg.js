@@ -1,5 +1,6 @@
 'use strict';
 
+
 module.exports = function() {
   $.gulp.task('sprite:svg', function() {
     return $.gulp.src('./source/sprite/*.svg')

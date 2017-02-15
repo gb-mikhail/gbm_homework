@@ -1,19 +1,44 @@
 include ../_template.pug
 
-header.header-main
-    .header-main__social-icons
-        .header-main__social-icons_vk
-            a(href="#")
-                svg.vk
-        .header-main__social-icons_git
-            a(href="#")
-                svg.git
-        .header-main__social-icons_in
-            a(href="#")
-                svg.in
+header
+    .header-main-icons
+        .header-main-icons__social-icons
+            .header-main__social-icons.header-main__social-icons_vk
+                a(href="#")
+                    svg.vk
+                        use(xlink:href="assets/sprite/sprite.svg#vk")
 
-    .header-main__right-line
-    .header-main__left-line
+            .header-main__social-icons.header-main__social-icons_git
+                a(href="#")
+                    svg.github
+                        use(xlink:href="assets/sprite/sprite.svg#github")
+
+            .header-main__social-icons.header-main__social-icons_in
+                a(href="#")
+                    svg.in
+                        use(xlink:href="assets/sprite/sprite.svg#in")
+
+
+
+        .header-main__social-icons.header-main-icons__burger-icon
+            a(href="#")
+                svg.burger-icon
+                    use(xlink:href="assets/sprite/sprite.svg#hamburger")
+
+
+    .header-main-content
+        .header-main-content__central-pic
+            .header-main-content__central-pic.header-main-content__central-pic_photo
+                img.header-main-content__central-pic_photo(src="assets/img/photo.png")
+            .header-main-content__central-pic_text
+                h2.
+                    Губа Михаил
+                p.
+                    Личный сайт веб разработчика
+
+
+
+
 
 content.main-content
     .main-content__left-block
