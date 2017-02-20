@@ -1,0 +1,129 @@
+include ../_template.pug
+
+.wrapper.blg
+    .blg-wrapper
+        .blg-header-main
+            .blg-header-main__icons
+                .icons__social-icons
+                    a(href="https://vk.com/raulduke_kk" target="_blank")
+                        svg.vk
+                            use(xlink:href="assets/sprite/sprite.svg#vk")
+
+                    a(href="https://github.com/gb-mikhail" target="_blank")
+                        svg.github
+                            use(xlink:href="assets/sprite/sprite.svg#github")
+
+                    a(href="#")
+                        svg.in
+                            use(xlink:href="assets/sprite/sprite.svg#in")
+
+                .icons__burger-icon
+                    a(href="#")
+                        svg.burger-icon
+                            use(xlink:href="assets/sprite/sprite.svg#hamburger")
+
+
+            .content__central-pic
+                .content__stars_bg
+                img.central-pic__photo(src="assets/img/photo.png")
+                .central-pic__text
+                    h1.central-pic__h1.
+                        Блог
+                    p.central-pic__text.
+                        Статьи которые я написал
+
+    .header__triangle
+        svg.header_left-triangle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 100 100', preserveaspectratio='none')
+            polygon(fill='#faf8f0', points='0,0 0,100 100,100')
+
+        svg.header_right-triangle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 100 100', preserveaspectratio='none')
+            polygon(fill='#faf8f0', points='0,100 100,0 100,100')
+
+content
+    .blg-content
+        .blg__nav
+            ul.blg__nav_list
+                a.nav_item(href="#")
+                    li.
+                        Самое важное в SASS
+                a.nav_item(href="#")
+                    li.
+                     Приёмы в вёрстке, без которых
+                     не обходится ни один сайт
+                a.nav_item(href="#")
+                    li.
+                        Самый необходимый набор Gulp плагинов
+                a.nav_item(href="#")
+                    li.
+                        Почему я выбрал Jade
+        .blg__article_container
+            .blg__article
+                .blg__article_wrapper
+                    .article_h2.
+                        Самое важное в SASS
+                    .article_date.
+                        22 ноября 2016
+                    .article_main-text.
+                        Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+
+                    img.main-text_img(src="assets/img/code_img.png")
+
+                .blg__article_wrapper
+                    .article_h2.
+                        Приёмы в вёрстке, без которых не обходится ни один сайт
+                    .article_date.
+                        13 ноября 2016
+                    .article_main-text.
+                        Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+
+                    img.main-text_img(src="assets/img/code_img.png")
+
+
+
+
+
+    .blg-footer_grey
+        .blg-footer_grey_block
+            p.footer_text.
+                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool
+        .blg-footer_grey_block
+            .block__list_wrapper
+                a.block-link(href="portfolio.html").
+                    Мои работы
+                a.block-link(href="another-page.html").
+                    Обо мне
+                a.block-link(href="blog.html").
+                    Блог
+                a.block-link(href="index.html").
+                    Авторизация
+            .block__icons_wrapper
+                .icons__social-icons
+                    a(href="https://vk.com/raulduke_kk" target="_blank")
+                        svg.vk
+                            use(xlink:href="assets/sprite/sprite.svg#vk")
+
+                    a(href="https://github.com/gb-mikhail" target="_blank")
+                        svg.github
+                            use(xlink:href="assets/sprite/sprite.svg#github")
+
+                    a(href="#")
+                        svg.in
+                            use(xlink:href="assets/sprite/sprite.svg#in")
+
+
+        .blg-footer_grey_block
+            p.footer_text.
+                hobbyzz.mikhail
+            p.footer_text.
+                gb.mikhail@gmail.com
+            p.footer_text.
+                +38(066)004-0-101
+            p.footer_text.
+                Тернополь, ул. Гаевая, 29
+
+    .blg-footer_blue
+        p.footer_text.
+            © Губа Михаил | Создано с любовью в LoftSchool | 2016
+    .blg-footer
