@@ -1,45 +1,18 @@
 include ../_template.pug
 
+.wrapper
+    .bg_image
+        .header__auth-button
+            include ../common/_auth-button.pug
 
-.wrapper.main-page
-    .header-main
-        a(href="#" target="_blank").header-main__button.
-            Авторизоваться
+        .main-form__wrapper
+            include ../common/_welcome-form.pug
 
-    content
-        .main-content
-            .main-block
-                img.main-block__pic(src="assets/img/photo.png")
-                h2.main-block__h2.
-                    Губа Михаил
-                p.main-block__text.
-                    Личный сайт веб-разработчика
+        .footer
+            p.light-text.
+                © Губа Михаил | создавалось бессонными ночами во время обучения в LoftSchool | 2017
 
-                .social-icons
-                    a(href='https://vk.com/raulduke_kk' target="_blank")
-                        svg.vk
-                            use(xlink:href="assets/sprite/sprite.svg#vk")
 
-                    a(href="https://github.com/gb-mikhail" target="_blank")
-                        svg.github
-                            use(xlink:href="assets/sprite/sprite.svg#github" )
-
-                    a(href="#" target="_blank")
-                        svg.in
-                            use(xlink:href="assets/sprite/sprite.svg#in")
-
-                .main-block__menu
-                    .menu__list
-                        a.menu__item(href="portfolio.html").
-                            Мои работы
-                        a.menu__item(href="another-page.html").
-                            Обо мне
-                        a.menu__item(href="blog.html").
-                            Блог
-
-    footer.footer
-        p.
-            © Михаил Губа | создавалось долгими ночами на курсах в LoftSchool | 2017
 
 
 

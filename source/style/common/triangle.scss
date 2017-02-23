@@ -1,0 +1,17 @@
+.triangle{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   height: 150px;
+ }
+
+.left-triangle {
+  width: 50%;
+  height: -1px;
+}
+
+.right-triangle{
+  width: 50%;
+  height: -1px;
+}

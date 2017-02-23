@@ -1,0 +1,27 @@
+.auth-button {
+  border: 1px #fff solid;
+  padding: 17px 28px;
+  border: 1px #fff solid;
+  background: none;
+  min-height: 40px;
+  &:hover{
+    cursor: pointer;
+    border: 1px #0548be solid;
+    transition: all 0.5s cubic-bezier(0.25,0.1,0.2,1);
+    color: #fff;
+    background-color: #0548be;
+  }
+  &:active {
+    cursor: pointer;
+    border: 1px #0548be solid;
+    color: #fff;
+    background-color: #0548be;
+  }
+}
+
+.button-text {
+  font-family: 'Roboto-Regular';
+  color: #fff;
+  margin: 0;
+  display: block;
+}

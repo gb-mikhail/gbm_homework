@@ -1,0 +1,83 @@
+@import 'social-icons.scss';
+
+.welcome-form {
+  width: 380px;
+  background-color: rgba(28,31,41,.5);
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.my-photo {
+  width: 141px;
+  height: 141px;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.my-photo_photo {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.my-name {
+  font-family: "Roboto-Regular";
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  z-index: 99;
+}
+
+.my-status {
+  opacity: 0.8;
+  color: #fff;
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  z-index: 99;
+}
+
+.my-social-icons-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.my-navigation__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  :last-child {
+    border-right: none;
+  }
+}
+
+.my-navigation__item {
+  border-right: 2px #7195d2 solid;
+}
+
+.my-navigation__link {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 5px 31px;
+  background-color: #0447bd;
+  &:hover {
+    background-color: rgba(4,62,163,.85);
+  }
+}
+

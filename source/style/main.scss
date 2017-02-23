@@ -1,186 +1,108 @@
+@import 'common/auth-button.scss';
+@import 'common/welcome-form.scss';
 @import 'common/about-me.scss';
-@import 'setup.scss';
-@import 'common/blog.scss';
-@import 'common/portfolio.scss';
 
-$color_main_blue: #0548be;
-$color_deep_blue: #083c96;
-$color_main_grey: #474b57;
 
-@mixin social-icon-form {
-  width: 26px;
-  height: 22px;
-  fill: #fff;
-  &:hover {
-    fill: #004cd1;
-  }
+body {
+  line-height: 1.42;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
 }
 
-//----------------Header-Start-----------------
+p {
+  margin:0;
+  padding:0;
+}
 
-.main-page{
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg_image {
   width: 100%;
   height: 100vh;
-  min-height: 770px;
+  background-image: url('../img/bg.png');
+  background-repeat:no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
 }
 
-.header-main {
-  padding-top: 24px;
-  padding-right: 20px;
+.header__auth-button {
+  padding: 30px 30px 0 0;
   display: flex;
   justify-content: flex-end;
 }
 
-.header-main__button {
-  width: 180px;
-  height: 45px;
-  border: 1px solid #fff;
-  text-decoration: none;
+.main-form__wrapper {
+  min-height: 395px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 15%;
+}
+
+.light-text {
   color: #fff;
-  font-family: "Roboto Medium";
+  font-family: 'Roboto-Light';
   font-size: 16px;
-  font-weight: 400;
-  line-height: 36px;
-  margin-bottom: 75px;
-  &:hover {
-    background-color: $color_deep_blue;
-    border: 1px solid $color_deep_blue;
-    transition: all 0.5s cubic-bezier(0.25,0.1,0.2,1);
-    color: #fff;
-  }
+  font-weight: 100;
 }
 
-//----------------Header-End-----------------
-
-//----------------Main-Content-Start-----------------
-
-content {
-  flex: 1;
-}
-
-.main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-block {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 380px;
-  height: 365px;
-  background-color: rgba(28, 31, 42, .5);
-  padding-top: 40px;
-}
-
-.main-block__h2 {
-  margin: 0;
-  font-family: "Roboto Medium";
-  font-weight: 400;
-  color: #fff;
-  font-size: 35px;
-  margin-bottom: 10px;
-}
-
-.main-block__text {
-  margin:0;
-  color: #fff;
-  font-family: "Roboto";
+.regular-text {
+  color: #474b57;
+  font-family: 'Roboto-Regular';
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 40px;
 }
 
-.main-block__pic {
-  width:141px;
-  height:141px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.social-icons {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 140px;
-  height: 23px;
-  margin-bottom:22px;
-}
-
-.vk {
-  @include social-icon-form();
-  width: 30px;
-  height: 22px;
-}
-
-.github {
-  @include social-icon-form();
-}
-
-.in {
-  @include social-icon-form();
-}
-
-.main-block__menu {
-  width: 100%;
-  height: 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-}
-
-.menu__list {
-  width: 100%;
-  height:45px;
+h1 {
+  color: #474b57;
+  font-family: "Webissimo";
+  font-size: 63px;
+  font-weight: 400;
   margin:0;
   padding:0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  :last-child {
-    border-right: none;
-    width: 36px;
-  }
+  text-transform: uppercase;
 }
 
-.menu__item{
-    color: #fff;
-    text-decoration: none;
-    background-color: $color_main_blue;
-    padding: 14px 31px;
-    border-right: 2px solid #7296d2;
-    &:hover {
-      background-color: $color_deep_blue;
-      transition: .4s;
-    }
-}
-
-//----------------Main-Content-End-----------------
-
-
-//-----------------Footer-Start------------------
-
-.footer {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-family: "Roboto Light";
-  font-size: 16px;
+h2 {
+  color: #474b57;
+  font-family: "Webissimo";
+  font-size: 35px;
   font-weight: 400;
-  line-height: 101px;
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
 }
 
-//-----------------Footer-End------------------
+
+h3{
+  color: #474b57;
+  font-family: "Roboto-Regular";
+  font-size: 28px;
+  font-weight: 600;
+  margin:0;
+  padding:0;
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}

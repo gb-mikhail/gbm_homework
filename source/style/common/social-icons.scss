@@ -1,0 +1,23 @@
+.social-icons__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+
+.social-icons__link {
+  padding: 10px;
+  fill: #fff;
+  &:hover {
+    fill: #004cd1;
+  }
+}
+
+.social-icons__icon {
+  height: 22px;
+  width: 26px;
+}
