@@ -1,0 +1,17 @@
+@import '../common/blog-left-navigation.scss';
+@import '../common/blog-article-text.scss';
+
+.bg_image_height {
+  height: 70vh;
+}
+
+.main-information__wrapper_blog-style {
+  background-color: #faf8f0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.my-blog-header {
+  color: #fff;
+}

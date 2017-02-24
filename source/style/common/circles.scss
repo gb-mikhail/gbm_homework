@@ -27,32 +27,39 @@
   transition: all 1s;
 }
 
-.circle-10 {
+.circle_fill_10 {
   stroke-dasharray: 28.26 282.6;
+  opacity: .1;
 }
 
-.circle-25 {
+.circle_fill_25 {
   stroke-dasharray: 70.65 282.6;
+  opacity: .25;
 }
 
-.circle-40 {
+.circle_fill_40 {
   stroke-dasharray: 113.04 282.6;
+  opacity: .4;
 }
 
-.circle-60 {
+.circle_fill_60 {
   stroke-dasharray: 169.56 282.6;
+  opacity: .6;
 }
 
-.circle-75 {
+.circle_fill_75 {
   stroke-dasharray: 211.95 282.6;
+  opacity: .75;
 }
 
-.circle-85 {
+.circle_fill_85 {
   stroke-dasharray: 240.21 282.6;
+  opacity: .85;
 }
 
-.circle-90 {
+.circle_fill_90 {
   stroke-dasharray: 254.34 282.6;
+  opacity: .9;
 }
 
 .circle {
@@ -68,67 +75,14 @@
 }
 
 .circle__text {
-  font-family: 'Roboto';
+  font-family: 'Roboto-Regular';
   font-size: 12px;
   font-weight: 800;
   color: #0548be;
-  margin: 0;
-  padding: 0;
   position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.html{
-  top: 43%;
-  left: 36%;
-  text-align:center;
-}
-
-.css3{
-  top: 43%;
-  left: 36%;
-  text-align:center;
-}
-
-.JS{
-  top: 36%;
-  left: 23%;
-  text-align:center;
-  width: 60px;
-}
-
-.php{
-  top: 43%;
-  left: 40%;
-  text-align:center;
-}
-
-.mysql{
-  top: 43%;
-  left: 34%;
-  text-align:center;
-}
-
-.node{
-  top: 38%;
-  left: 24%;
-  text-align:center;
-  width: 60px;
-}
-
-.mongo{
-  top: 43%;
-  left: 25%;
-  text-align:center;
-}
-
-.git{
-  top: 43%;
-  left: 43%;
-  text-align:center;
-}
-
-.gulp{
-  top: 43%;
-  left: 39%;
-  text-align:center;
-}

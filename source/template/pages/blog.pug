@@ -1,0 +1,21 @@
+include ../_template.pug
+
+.wrapper
+    .bg_image.bg_image_height
+        .header
+            include ../common/_social-icons.pug
+            .header__burger-icon
+                a.burger-icon__link(href="#")
+                    svg.burger-icon__icon
+                        use(xlink:href="assets/sprite/sprite.svg#hamburger")
+
+
+        include ../common/_blog-container.pug
+        include ../common/_blog-triangle.pug
+
+    .main-information__wrapper.main-information__wrapper_blog-style
+        include ../common/_blog-left-navigation.pug
+        include ../common/_blog-article-text.pug
+
+    .footer
+        include ../common/_main-footer.pug

@@ -1,7 +1,13 @@
-@import 'common/auth-button.scss';
-@import 'common/welcome-form.scss';
-@import 'common/about-me.scss';
-
+.bg_image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/bg.png');
+  background-repeat:no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+}
 
 body {
   line-height: 1.42;
@@ -18,22 +24,16 @@ p {
   padding:0;
 }
 
+a {
+  display: block;
+}
+
 .wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.bg_image {
-  width: 100%;
-  height: 100vh;
-  background-image: url('../img/bg.png');
-  background-repeat:no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-size: cover;
-}
 
 .header__auth-button {
   padding: 30px 30px 0 0;
@@ -57,22 +57,26 @@ p {
 }
 
 .light-text {
-  color: #fff;
   font-family: 'Roboto-Light';
   font-size: 16px;
   font-weight: 100;
 }
 
-.regular-text {
+.text_color_white {
+  color: #fff;
+}
+
+.text_color_grey {
   color: #474b57;
+}
+
+.regular-text {
   font-family: 'Roboto-Regular';
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
 }
 
-h1 {
-  color: #474b57;
+.main_h1 {
   font-family: "Webissimo";
   font-size: 63px;
   font-weight: 400;
@@ -81,8 +85,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
-  color: #474b57;
+.main_h2 {
   font-family: "Webissimo";
   font-size: 35px;
   font-weight: 400;
@@ -92,8 +95,7 @@ h2 {
 }
 
 
-h3{
-  color: #474b57;
+.main_h3{
   font-family: "Roboto-Regular";
   font-size: 28px;
   font-weight: 600;
@@ -106,3 +108,10 @@ ul {
   margin:0;
   padding: 0;
 }
+
+//-----------Import-styles-----------
+
+@import 'common/auth-button.scss';
+@import 'common/welcome-form.scss';
+@import 'common/about-me.scss';
+@import 'common/blog.scss';
