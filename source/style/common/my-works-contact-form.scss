@@ -94,12 +94,16 @@
   }
 }
 
-.arrow_down {
+.arrow-up {
   width: 20px;
   height: 20px;
   fill: #fff;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
 }
 
-.ptf-header-main__up-button{
+.review-block__up-button {
   margin-bottom: 70px;
 }

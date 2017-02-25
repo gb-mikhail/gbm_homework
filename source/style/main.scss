@@ -1,3 +1,35 @@
+@mixin desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+html {
+  @include desktop {
+    font-size: 16px;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
 .bg_image {
   width: 100%;
   height: 100vh;
@@ -5,12 +37,11 @@
   background-repeat:no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-size: cover;
 }
 
 body {
-  line-height: 1.42;
   padding: 0;
   margin: 0;
   font-family: 'Roboto-Regular';
@@ -34,11 +65,14 @@ a {
   flex-direction: column;
 }
 
-
 .header__auth-button {
-  padding: 30px 30px 0 0;
+  padding: 0 30px 0 0;
   display: flex;
   justify-content: flex-end;
+  @include mobile {
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 .main-form__wrapper {
@@ -53,7 +87,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 15%;
+  text-align: center;
+}
+
+.footer__text {
+  padding: 0 20px;
 }
 
 .light-text {
@@ -94,7 +132,6 @@ a {
   padding:0;
   text-transform: uppercase;
 }
-
 
 .main_h3{
   font-family: "Roboto-Regular";
