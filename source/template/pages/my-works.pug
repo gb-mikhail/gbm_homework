@@ -1,0 +1,27 @@
+include ../_template.pug
+
+.wrapper
+    .bg_image
+        .header
+            .header__social-icons
+                include ../common/_social-icons.pug
+            .header__burger-icon
+                a.burger-icon__link(href="#")
+                    svg.burger-icon__icon
+                        use(xlink:href="assets/sprite/sprite.svg#hamburger")
+        include ../common/_my-container.pug
+        include ../common/_my-works-figure.pug
+    .main-information__wrapper
+        include ../common/_my-works-left-block.pug
+        include ../common/_my-works-right-block.pug
+    .review-block__wrapper
+        .main_h1.text_color_white
+            |Что обо мне
+            br
+            |говорят
+            .review-block__stars3
+        include ../common/_my-works-teachers-review.pug
+        include ../common/_my-works-contact-form.pug
+
+        .footer
+            include ../common/_main-footer.pug

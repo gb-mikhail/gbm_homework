@@ -1,0 +1,24 @@
+.review-block__feedback-form
+    h2.main_h2.text_color_white.
+        Связаться со мной
+    .underline.underline_light_grey_color
+    form.feedback-form(action='', method='post', name='contact_form')
+        .feedback-form__item
+            label(for='name')
+            input.feedback-form__input(type='text', name='Name', placeholder='Ваше Имя')
+        .feedback-form__item
+            label(for='email')
+            input.feedback-form__input(type='text', name='email', placeholder='Ваш E-mail')
+        .feedback-form__item
+            label(for='massage')
+            textarea.feedback-form__message(type='text' cols="40" rows="6" name='message', placeholder='Ваше сообщение')
+        .feedback-form__button-wrapper
+            button.feedback-form__button-send.regular-text.text_color_white(type='button', name='button').
+                Отправить
+            button.feedback-form__button-clear.regular-text.text_color_grey(type='button', name='button').
+                Очистить
+
+.ptf-header-main__up-button
+    a(href="#")
+        svg.arrow_down
+            use(xlink:href="assets/sprite/sprite.svg#portf_arrow_up")

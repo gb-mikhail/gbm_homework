@@ -1,0 +1,33 @@
+@import '../common/my-works-figure';
+@import '../common/my-works-left-block';
+@import '../common/my-works-right-block';
+@import '../common/my-works-teachers-review';
+@import '../common/my-works-contact-form';
+
+.review-block__wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/lighthouse.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 30px 0 0 0;
+  justify-content: space-around;
+}
+
+.review-block__stars3 {
+  width: 170px;
+  height: 210px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iYmFja2dyb3VuZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMDMuMDNweCIgaGVpZ2h0PSIxMjQuMDNweCIgdmlld0JveD0iMCAwIDEwMy4wMyAxMjQuMDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMy4wMyAxMjQuMDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjUuMTgyIiBjeT0iNjAuMTgyIiByPSI1LjE4MiIvPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjUwLjE4MiIgY3k9IjUuMTgyIiByPSI1LjE4MiIvPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjMxLjE4MiIgY3k9IjEyMS4xODIiIHI9IjIuODQ4Ii8+PGNpcmNsZSBmaWxsPSIjRkZGRkZGIiBjeD0iNjUuMTgyIiBjeT0iNTUuMTgyIiByPSIyLjg0OCIvPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjEwMC4xODIiIGN5PSI0OS4xODIiIHI9IjIuODQ4Ii8+PGNpcmNsZSBmaWxsPSIjRkZGRkZGIiBjeD0iOTQuMTgyIiBjeT0iMTA0LjE4MiIgcj0iMi44NDgiLz48cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMC43NSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjUwLjE4Myw1LjE4MiA1LjE4Myw2MC4xODIgMzEuMTgzLDEyMS4xODMgIi8+PHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjAuNzUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxMDAuMTgzLDQ5LjE4MiA1MC4xODMsNS4xODIgNS4xODMsNjAuMTgyIDk0LjE4MywxMDQuNjEyICIvPjxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIwLjc1IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHgxPSI2NS4xODMiIHkxPSI1NS4xODIiIHgyPSIzMS4xODMiIHkyPSIxMjEuMTgzIi8+PC9zdmc+)no-repeat;
+  background-size:100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
