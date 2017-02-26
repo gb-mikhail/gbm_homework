@@ -4,6 +4,20 @@
 @import '../common/my-works-teachers-review';
 @import '../common/my-works-contact-form';
 
+html {
+  @include desktop {
+    font-size: 16px;
+  }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
 .review-block__wrapper {
   width: 100%;
   height: 100%;

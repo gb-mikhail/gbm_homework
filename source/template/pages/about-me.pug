@@ -1,7 +1,7 @@
 include ../_template.pug
 
 .wrapper
-    .bg_image
+    .bg_image.bg_image_height
         .header
             .header__social-icons
                 include ../common/_social-icons.pug
@@ -10,8 +10,13 @@ include ../_template.pug
                     svg.burger-icon__icon
                         use(xlink:href="assets/sprite/sprite.svg#hamburger")
 
-
         include ../common/_my-container.pug
+
+        .header__down-button
+            a(href="#")
+                svg.arrow_down
+                    use(xlink:href="assets/sprite/sprite.svg#arrow_down")
+
         include ../common/_triangle.pug
 
     .main-information__wrapper

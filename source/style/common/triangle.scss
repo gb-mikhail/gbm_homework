@@ -9,9 +9,17 @@
 .left-triangle {
   width: 50%;
   height: -1px;
+  fill: #f2f0e8;
 }
 
 .right-triangle{
   width: 50%;
   height: -1px;
+  fill: #f4f5f0;
+  @include tablet {
+    fill:#f2f0e8;
+  }
+  @include mobile {
+    fill:#f2f0e8;
+  }
 }

@@ -5,12 +5,31 @@
   justify-content: space-around;
   align-items: flex-start;
   max-width: 85%;
+  @include tablet {
+    align-items: center;
+    padding-bottom: 30px;
+    max-width: 100%;
+  }
+  @include mobile {
+    align-items: center;
+    padding-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+
+  }
 }
 
 .circle__wrapper{
   position: relative;
-  width: 110px;
-  margin-right: 37px;
+  @include desktop-lg {
+    margin-right:30px;
+  }
+  @include desktop {
+    margin-right:30px;
+  }
+  @include mobile {
+    margin-right: 0;
+  }
 }
 
 .circles__figure {
@@ -71,6 +90,14 @@
   padding:0;
   :last-child {
     margin-right: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
   }
 }
 

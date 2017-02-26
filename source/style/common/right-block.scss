@@ -8,6 +8,15 @@
   align-items: center;
   justify-content: space-around;
   padding: 0 0 60px 0;
+  overflow: hidden;
+  @include tablet {
+    width: 100%;
+    padding: 60px 0 0;
+  }
+  @include mobile {
+    width: 100%;
+    padding: 60px 0 0;
+  }
 }
 
 .right-block__h2{
@@ -16,4 +25,11 @@
 }
 .right-block__text {
   max-width: 85%;
+  padding-bottom: 30px;
+}
+
+.right-triangle {
+  @include tablet {
+    fill: #f2f0e8;
+  }
 }
