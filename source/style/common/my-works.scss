@@ -1,6 +1,5 @@
 @import '../common/my-works-figure';
-@import '../common/my-works-left-block';
-@import '../common/my-works-right-block';
+@import '../common/main-information__slider';
 @import '../common/my-works-teachers-review';
 @import '../common/my-works-contact-form';
 
@@ -31,6 +30,15 @@ html {
   position: relative;
   padding: 30px 0 0 0;
   justify-content: space-around;
+  @include desktop {
+    background-size: auto;
+  }
+  @include tablet {
+    background-size: auto;
+  }
+  @include mobile {
+    background-size: auto;
+  }
 }
 
 .review-block__stars3 {
@@ -43,5 +51,10 @@ html {
   top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include tablet {
+    top: 9%
+  }
+  @include mobile {
+    top: 6%;
+  }
 }
-

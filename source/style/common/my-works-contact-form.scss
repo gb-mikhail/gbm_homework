@@ -8,6 +8,12 @@
   justify-content: space-between;
   margin-bottom: 70px;
   padding: 30px 0 0;
+  @include tablet {
+    width: 60%;
+  }
+  @include mobile {
+    width: 85%;
+  }
 }
 
 .feedback-form {
