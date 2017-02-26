@@ -1,5 +1,6 @@
 include ../_template.pug
 
+
 .wrapper
     .bg_image.bg_image_height
         .header
@@ -9,13 +10,34 @@ include ../_template.pug
                     svg.burger-icon__icon
                         use(xlink:href="assets/sprite/sprite.svg#hamburger")
 
-
         include ../common/_blog-container.pug
-        include ../common/_blog-triangle.pug
 
+        .header__down-button
+            a(href="#")
+                svg.arrow_down
+                    use(xlink:href="assets/sprite/sprite.svg#arrow_down")
+
+        include ../common/_blog-triangle.pug
     .main-information__wrapper.main-information__wrapper_blog-style
         include ../common/_blog-left-navigation.pug
         include ../common/_blog-article-text.pug
 
     .footer
         include ../common/_main-footer.pug
+
+.swipe-button
+    .swipe-button__left-nav
+        ul.swipe-button__list
+            li.swipe-button__item(href="#")
+                a.swipe-button__link.
+                    Самое важное в SASS
+            li.swipe-button__item(href="#")
+                a.swipe-button__link.
+                    Приёмы в вёрстке, без которых
+                    не обходится ни один сайт
+            li.swipe-button__item(href="#")
+                a.swipe-button__link.
+                    Самый необходимый набор Gulp плагинов
+            li.swipe-button__item(href="#")
+                a.swipe-button__link.
+                    Почему я выбрал Jade

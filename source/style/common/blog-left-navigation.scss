@@ -3,6 +3,12 @@
   width: 37%;
   background-color: #faf8f0;
   padding-top: 50px;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
 }
 
 .left-navigation__list {
