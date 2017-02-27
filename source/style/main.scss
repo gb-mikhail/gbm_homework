@@ -84,6 +84,7 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: rgba(28,31,42,.85);
 }
 
 .footer__text {
@@ -125,6 +126,12 @@ a {
   padding:0;
   text-transform: uppercase;
   text-align: center;
+  @include tablet {
+    font-size: 48px;
+  }
+  @include mobile {
+    font-size: 35px;
+  }
 }
 
 .main_h2 {
@@ -134,6 +141,12 @@ a {
   margin:0;
   padding:0;
   text-transform: uppercase;
+  @include tablet {
+    font-size: 30px;
+  }
+  @include mobile {
+    font-size: 21px;
+  }
 }
 
 .main_h3{

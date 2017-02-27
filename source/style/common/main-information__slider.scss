@@ -94,10 +94,6 @@
   background-color: #e3e2de;
 }
 
-.prev-pic {
-  width: 100%;
-  height: auto;
-}
 
 .right-block__next-pic {
   width: 50%;
@@ -107,7 +103,41 @@
   background-color: #e3e2de;
 }
 
-.next-pic {
-  width: 100%;
+.preview-pic {
+  width: auto;
   height: auto;
+  @include tablet {
+    width: 100%;
+    height: auto;
+  }
+  @include mobile {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.next-pic {
+  width: auto;
+  height: auto;
+  @include tablet {
+    width: 100%;
+    height: auto;
+  }
+  @include mobile {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.prev-pic {
+  width: auto;
+  height: auto;
+  @include tablet {
+    width: 100%;
+    height: auto;
+  }
+  @include mobile {
+    width: 100%;
+    height: auto;
+  }
 }

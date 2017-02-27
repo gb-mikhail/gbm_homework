@@ -37,7 +37,8 @@ html {
     background-size: auto;
   }
   @include mobile {
-    background-size: auto;
+    background-size: cover;
+    background-position-x: 50%;
   }
 }
 
