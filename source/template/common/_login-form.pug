@@ -1,0 +1,24 @@
+.sign-in-form
+    h2.main_h2.text_color_white.
+        авторизируйтесь
+    .sign-in__wrapper
+        form.sign-in__main-form(action='', method='POST', name='contactForm')
+            .sign-in__container
+                label.sign-in__label(for='userName')
+                    svg.sign-in__icon
+                        use(xlink:href="assets/sprite/sprite.svg#login")
+                input#userName(name='login', type='login', placeholder='Логин')
+            .sign-in__container
+                label.sign-in__label(for='userPassword')
+                    svg.sign-in__icon
+                        use(xlink:href="assets/sprite/sprite.svg#password")
+                input#userPassword(name='password', type='password', placeholder='Пароль')
+
+    ul.sign-in__list
+        li.sign-in__item
+            a.sign-in__link.regular-text.text_color_white(href="my-works.html").
+                На главную
+
+        li.sign-in__item
+            a.sign-in__link.regular-text.text_color_white(href="about-me.html").
+                Войти

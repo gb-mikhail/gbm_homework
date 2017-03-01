@@ -1,0 +1,113 @@
+@import 'social-icons.scss';
+
+.sign-in-form {
+  width: 380px;
+  background-color: rgba(28,31,41,.5);
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sign-in__icon {
+  width: 15px;
+  height: 15px;
+  fill: #c4cbcd;
+}
+
+//----------------
+
+.sign-in__wrapper {
+  width: 90%;
+}
+
+.sign-in__main-form{
+  overflow: hidden;
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sign-in__container {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: transparent;
+}
+
+label,
+input,
+textarea {
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1em;
+  border: none;
+}
+
+.sign-in__label {
+  display: inline-block;
+  font-size: 16px;
+  background: #f0efe9;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 1.75em;
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+  /*POSITION*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+textarea,
+input {
+  width: 100%;
+  max-width: 100%;
+}
+
+textarea {
+  margin-bottom: -5px;
+}
+
+input {
+  padding-left: 65px;
+}
+
+//----------------
+
+.sign-in__list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  :first-child {
+    border-left: none;
+  }
+}
+
+.sign-in__item {
+  width: 50%;
+  border-left: 2px #7195d2 solid;
+}
+
+.sign-in__link {
+  width: 50%;
+  line-height: 36px;
+  text-decoration: none;
+  padding: 5px 48px;
+  display: block;
+  text-align: center;
+  background-color: #0447bd;
+  &:hover {
+    background-color: rgba(4,62,163,.85);
+  }
+}
+

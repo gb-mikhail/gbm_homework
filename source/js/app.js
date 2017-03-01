@@ -1,7 +1,22 @@
-(function() {
-  'use strict';
+var parallaxContainer = document.getElementById('parallax'),
+    layers = parallaxContainer.children;
 
-  setTimeout(function() {
-    document.querySelector('.greating_picture').classList.add('m--show');
-  }, 1000);
+window.addEventListener('mousemove', function (e) {
+    var pageX = e.pageX,
+        pageY = e.pageY,
+        initialX = (window.innerWidth / 2) - pageX,
+        initialY = (window.innerHeight / 2) - pageY;
+
+    [].slice.call(layers).forEach(function (layer, i) {
+        var
+            divider = i / 100,
+            bottomPosition = (window.innerHeight / 2) * divider,
+            positionX = initialX * divider,
+            positionY = initialY * divider,
+            layerStyle = layer.style,
+            transformString = 'translate3d('+ positionX +'px,' + positionY + 'px, 0)';
+
+            layerStyle.transform = transformString;
+            layerStyle.bottom = '-' + bottomPosition + 'px';
+    });
 });

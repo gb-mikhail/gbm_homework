@@ -17,48 +17,79 @@
   </head>
   <body></body>
 </html>
-<div class="wrapper">
-  <video class="video" autoplay loop="">
-    <source src="assets/img/video.mp4" type="video/mp4">
-  </video>
-  <div class="bg_image">
+<div class="parallax-wrapper">
+  <div class="parallax" id="parallax"><img class="parallax__layer" src="assets/img/sky.png"><img class="parallax__layer" src="assets/img/par_stars_3.png"><img class="parallax__layer" src="assets/img/par_stars_2.png"><img class="parallax__layer" src="assets/img/par_stars_1.png"><img class="parallax__layer" src="assets/img/mount.png"><img class="parallax__layer" src="assets/img/par_forest.png"></div>
+  <div class="welcome-wrapper">
     <div class="header__auth-button">
       <button class="auth-button" type="button">
         <p class="light-text text_color_white">Авторизоваться</p>
       </button>
     </div>
-    <div class="main-form__wrapper">
-      <div class="welcome-form">
-        <div class="my-photo"><img class="my-photo_photo" src="assets/img/photo.png"></div>
-        <p class="my-name">Губа Михаил</p>
-        <p class="my-status regular-text text_color_white">Личный сайт веб-разработчика</p>
-        <div class="my-social-icons-wrapper">
-          <div class="header__social-icons">
-            <ul class="social-icons__list">
-              <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com/raulduke_kk" target="_blank">
-                  <svg class="social-icons__icon">
-                    <use xlink:href="assets/sprite/sprite.svg#vk"></use>
-                  </svg></a></li>
-              <li class="social-icons__item"><a class="social-icons__link" href="https://github.com/gb-mikhail" target="_blank">
-                  <svg class="social-icons__icon">
-                    <use xlink:href="assets/sprite/sprite.svg#github"></use>
-                  </svg></a></li>
-              <li class="social-icons__item"><a class="social-icons__link" href="#" target="_blank">
-                  <svg class="social-icons__icon">
-                    <use xlink:href="assets/sprite/sprite.svg#in"></use>
-                  </svg></a></li>
+    <div class="flip-container__wrapper">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="main-form__wrapper">
+          <div class="welcome-form">
+            <div class="my-photo"><img class="my-photo_photo" src="assets/img/photo.png"></div>
+            <p class="my-name">Губа Михаил</p>
+            <p class="my-status regular-text text_color_white">Личный сайт веб-разработчика</p>
+            <div class="my-social-icons-wrapper">
+              <div class="header__social-icons">
+                <ul class="social-icons__list">
+                  <li class="social-icons__item"><a class="social-icons__link" href="https://vk.com/raulduke_kk" target="_blank">
+                      <svg class="social-icons__icon">
+                        <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="social-icons__item"><a class="social-icons__link" href="https://github.com/gb-mikhail" target="_blank">
+                      <svg class="social-icons__icon">
+                        <use xlink:href="assets/sprite/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="social-icons__item"><a class="social-icons__link" href="#" target="_blank">
+                      <svg class="social-icons__icon">
+                        <use xlink:href="assets/sprite/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="my-navigation__list">
+              <li class="my-navigation__item"><a class="my-navigation__link regular-text text_color_white" href="my-works.html">
+                  Мои работы
+                  </a></li>
+              <li class="my-navigation__item"><a class="my-navigation__link regular-text text_color_white" href="about-me.html">
+                  Обо мне
+                  </a></li>
+              <li class="my-navigation__item"><a class="my-navigation__link regular-text text_color_white" href="blog.html">Блог</a></li>
+            </ul>
+          </div>
+          <div class="sign-in-form">
+            <h2 class="main_h2 text_color_white">авторизируйтесь</h2>
+            <div class="sign-in__wrapper">
+              <form class="sign-in__main-form" action="" method="POST" name="contactForm">
+                <div class="sign-in__container">
+                  <label class="sign-in__label" for="userName">
+                    <svg class="sign-in__icon">
+                      <use xlink:href="assets/sprite/sprite.svg#login"></use>
+                    </svg>
+                  </label>
+                  <input id="userName" name="login" type="login" placeholder="Логин">
+                </div>
+                <div class="sign-in__container">
+                  <label class="sign-in__label" for="userPassword">
+                    <svg class="sign-in__icon">
+                      <use xlink:href="assets/sprite/sprite.svg#password"></use>
+                    </svg>
+                  </label>
+                  <input id="userPassword" name="password" type="password" placeholder="Пароль">
+                </div>
+              </form>
+            </div>
+            <ul class="sign-in__list">
+              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="my-works.html">
+                  На главную
+                  </a></li>
+              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="about-me.html">Войти</a></li>
             </ul>
           </div>
         </div>
-        <ul class="my-navigation__list">
-          <li class="my-navigation__item"><a class="my-navigation__link regular-text text_color_white" href="my-works.html">
-              Мои работы
-              </a></li>
-          <li class="my-navigation__item"><a class="my-navigation__link regular-text text_color_white" href="about-me.html">
-              Обо мне
-              </a></li>
-          <li class="my-navigation__item"><a class="my-navigation__link regular-text text_color_white" href="blog.html">Блог</a></li>
-        </ul>
       </div>
     </div>
     <div class="footer">
