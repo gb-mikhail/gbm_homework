@@ -111,3 +111,45 @@ input {
   }
 }
 
+.sign-in__checkbox-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in__checkbox-input{
+  width: 0;
+  height: 0;
+}
+
+.sign-in__checkbox-label {
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-in__checkbox-input_fake {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #fff;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.sign-in__checkbox-input:checked + .sign-in__checkbox-label > .sign-in__checkbox-input_fake {
+  background-color: #0548be;
+  width: 20px;
+  height: 20px;
+}
+
+.sign-in__checkbox-input:checked + .sign-in__checkbox-label > .sign-in__checkbox-input_fake::before {
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSImI3g0MjE7JiN4NDNCOyYjeDQzRTsmI3g0Mzk7XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTJweCIgaGVpZ2h0PSI5cHgiIHZpZXdCb3g9IjAgMCAxMiA5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMiA5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0xMS41OTYsMi4zMTdMNi4xNDcsNy43NjZMNS4xMjMsOC43ODlDNC45ODgsOC45MjUsNC44LDksNC42MTEsOUM0LjQyMyw5LDQuMjM1LDguOTI1LDQuMSw4Ljc4OUwzLjA3Niw3Ljc2NkwwLjM1MSw1LjA0MUMwLjIxNiw0LjkwNiwwLjE0MSw0LjcxNywwLjE0MSw0LjUyOXMwLjA3NS0wLjM3NiwwLjIxMS0wLjUxMmwxLjAyNC0xLjAyNGMwLjEzNi0wLjEzNiwwLjMyNC0wLjIxMSwwLjUxMi0wLjIxMXMwLjM3NiwwLjA3NSwwLjUxMiwwLjIxMWwyLjIxMywyLjIybDQuOTM4LTQuOTQ1YzAuMTM1LTAuMTM2LDAuMzIzLTAuMjExLDAuNTExLTAuMjExczAuMzc2LDAuMDc1LDAuNTEyLDAuMjExbDEuMDI0LDEuMDI0YzAuMTM2LDAuMTM2LDAuMjExLDAuMzI0LDAuMjExLDAuNTEyUzExLjczMiwyLjE4MSwxMS41OTYsMi4zMTd6Ii8+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+);
+  position: relative;
+  top: 2px;
+  left: 4px;
+}

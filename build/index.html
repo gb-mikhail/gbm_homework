@@ -18,7 +18,16 @@
   <body></body>
 </html>
 <div class="parallax-wrapper">
-  <div class="parallax" id="parallax"><img class="parallax__layer" src="assets/img/sky.png"><img class="parallax__layer" src="assets/img/par_stars_3.png"><img class="parallax__layer" src="assets/img/par_stars_2.png"><img class="parallax__layer" src="assets/img/par_stars_1.png"><img class="parallax__layer" src="assets/img/mount.png"><img class="parallax__layer" src="assets/img/par_forest.png"></div>
+  <div class="parallax" id="parallax">
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/sky-min.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/stars_5.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/stars_4.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/stars_3.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/stars_2.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/stars_1-min.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/mounts-min.png"></div>
+    <div class="parallax__layer"><img class="parallax-pic" src="assets/img/forest-min.png"></div>
+  </div>
   <div class="welcome-wrapper">
     <div class="header__auth-button">
       <button class="auth-button" type="button">
@@ -82,8 +91,12 @@
                 </div>
               </form>
             </div>
+            <div class="sign-in__checkbox-wrapper">
+              <input class="sign-in__checkbox-input" id="checkbox" type="checkbox">
+              <label class="sign-in__checkbox-label text_color_white" for="checkbox"><span class="sign-in__checkbox-input_fake"></span>  Я человек</label>
+            </div>
             <ul class="sign-in__list">
-              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="my-works.html">
+              <li class="sign-in__item"><a class="sign-in__link sign-in__link_return regular-text text_color_white" href="my-works.html">
                   На главную
                   </a></li>
               <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="about-me.html">Войти</a></li>

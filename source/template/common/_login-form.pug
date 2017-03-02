@@ -14,9 +14,15 @@
                         use(xlink:href="assets/sprite/sprite.svg#password")
                 input#userPassword(name='password', type='password', placeholder='Пароль')
 
+    .sign-in__checkbox-wrapper
+        input#checkbox.sign-in__checkbox-input(type='checkbox')
+        label.sign-in__checkbox-label.text_color_white(for='checkbox')
+            span.sign-in__checkbox-input_fake
+            |   Я человек
+
     ul.sign-in__list
         li.sign-in__item
-            a.sign-in__link.regular-text.text_color_white(href="my-works.html").
+            a.sign-in__link.sign-in__link_return.regular-text.text_color_white(href="my-works.html").
                 На главную
 
         li.sign-in__item

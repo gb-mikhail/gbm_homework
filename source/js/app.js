@@ -20,3 +20,4 @@ window.addEventListener('mousemove', function (e) {
             layerStyle.bottom = '-' + bottomPosition + 'px';
     });
 });
+
