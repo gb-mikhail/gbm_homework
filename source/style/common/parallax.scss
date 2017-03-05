@@ -29,6 +29,9 @@
     height: 100%;
     position: absolute;
     left: 50%;
-    width: 1700px;
-    margin-left: -850px;
+    width: 106vw;
+    margin-left: -53vw;
+  @include tablet {
+    width: auto;
+  }
 }

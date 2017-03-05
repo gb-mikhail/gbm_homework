@@ -15,7 +15,14 @@
     <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body></body>
+  <body>
+    <div class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__animation"></div>
+        <div class="preloader__percents">0%</div>
+      </div>
+    </div>
+  </body>
 </html>
 <div class="wrapper">
   <div class="bg_image bg_image_height">
@@ -38,10 +45,18 @@
           </ul>
         </div>
       </div>
-      <div class="header__burger-icon"><a class="burger-icon__link" href="#">
-          <svg class="burger-icon__icon">
-            <use xlink:href="assets/sprite/sprite.svg#hamburger"></use>
-          </svg></a></div>
+      <button class="header__burger-menu" type="button"><span class="header__burger-menu_icon"></span></button>
+      <nav class="header__nav-menu">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link main_h1 text_color_white" href="my-works.html">Мои работы</a></li>
+          <li class="header__nav-item main_h1 text_color_white"><a class="header__nav-link main_h1 text_color_white" href="blog.html">Блог</a></li>
+          <li class="header__nav-item main_h1 text_color_white"><a class="header__nav-link main_h1 text_color_white" href="about-me.html">Обо мне</a></li>
+          <li class="header__nav-item main_h1 text_color_white"><a class="header__nav-link main_h1 text_color_white" href="index.html">
+              Авторизация
+              
+              </a></li>
+        </ul>
+      </nav>
     </div>
     <div class="my-container__wrapper">
       <div class="my-container">

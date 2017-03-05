@@ -15,7 +15,14 @@
     <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body></body>
+  <body>
+    <div class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__animation"></div>
+        <div class="preloader__percents">0%</div>
+      </div>
+    </div>
+  </body>
 </html>
 <div class="parallax-wrapper">
   <div class="parallax" id="parallax">
@@ -79,7 +86,7 @@
                       <use xlink:href="assets/sprite/sprite.svg#login"></use>
                     </svg>
                   </label>
-                  <input id="userName" name="login" type="login" placeholder="Логин">
+                  <input class="sign-in__input" id="userName" name="login" type="login" placeholder="Логин">
                 </div>
                 <div class="sign-in__container">
                   <label class="sign-in__label" for="userPassword">
@@ -87,7 +94,7 @@
                       <use xlink:href="assets/sprite/sprite.svg#password"></use>
                     </svg>
                   </label>
-                  <input id="userPassword" name="password" type="password" placeholder="Пароль">
+                  <input class="sign-in__input" id="userPassword" name="password" type="password" placeholder="Пароль">
                 </div>
               </form>
             </div>
@@ -95,11 +102,20 @@
               <input class="sign-in__checkbox-input" id="checkbox" type="checkbox">
               <label class="sign-in__checkbox-label text_color_white" for="checkbox"><span class="sign-in__checkbox-input_fake"></span>  Я человек</label>
             </div>
+            <div class="sign-in__radio-btns-wrapper">
+              <p class="sign-in__heading text_color_white">Вы точно не робот?</p>
+              <div class="sign-in__radio-btns-list">
+                <input class="sign-in__radio-btn-input" id="radio-btn" name="radio-btn" type="radio" value="Yes">
+                <label class="sign-in__radio-btn_label text_color_white" for="radio-btn"><span class="sign-in__radio-btn-input_fake"></span>  Да</label>
+                <input class="sign-in__radio-btn-input" id="radio-btn_2" name="radio-btn" type="radio" value="No">
+                <label class="sign-in__radio-btn_label text_color_white" for="radio-btn_2"><span class="sign-in__radio-btn-input_fake"></span>  Не уверен</label>
+              </div>
+            </div>
             <ul class="sign-in__list">
-              <li class="sign-in__item"><a class="sign-in__link sign-in__link_return regular-text text_color_white" href="my-works.html">
+              <li class="sign-in__item" id="back-to-main-button"><a class="sign-in__link sign-in__link_return regular-text text_color_white" href="#">
                   На главную
                   </a></li>
-              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="about-me.html">Войти</a></li>
+              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="#">Войти</a></li>
             </ul>
           </div>
         </div>

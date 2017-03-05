@@ -48,6 +48,160 @@ html {
   padding: 30px 30px 0 30px;
 }
 
+.header__burger-menu {
+  transition: 0.1s transform linear;
+  position: relative;
+  background: 0;
+  width: 3.5rem;
+  z-index: 1001;
+  outline: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+.header__burger-menu_icon {
+  &:hover {
+    background: #004cd1;
+  }
+  &, &::before, &::after {
+    cursor: pointer;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 0.2rem;
+    content: '';
+    top: 50%;
+    left: 0;
+    background: #fff;
+  }
+
+  &::before {
+    top: -1.2rem;
+  }
+
+  &:hover::before {
+    top: -1.2rem;
+    background: #004cd1;
+  }
+
+  &::after {
+    top: 1.2rem;
+  }
+
+  &:hover::after {
+    top: 1.2rem;
+    background: #004cd1;
+  }
+
+  &:active::after {
+    top: 1.2rem;
+    background: #fff;
+  }
+
+  &:active::before {
+    top: 1.2rem;
+    background: #fff;
+  }
+
+
+  &::before,
+  &::after {
+    transform: rotate(0deg);
+  }
+
+  .active & {
+    background: 0;
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &,
+    &::before,
+    &::after {
+      transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+    }
+  }
+}
+
+.header__nav-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(24,54,105,.87);
+  position: fixed;
+  transform: translateX(-6000px);
+  transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);
+  z-index: 1000;
+  margin: -30px 0 0 -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .menu-open & {
+    transform: translateX(0);
+  }
+}
+
+.header__nav-list {
+  height: 50%;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__nav-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.header__nav-link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  transition: width .5s ease-in-out;
+  left: 50%;
+  bottom: 0;
+}
+
+.header__nav-link::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  transition: width .5s ease-in-out, left .5s ease-in-out;
+  left: 50%;
+  bottom: 0;
+}
+
+.header__nav-link:hover::after {
+  width: 50%;
+}
+.header__nav-link:hover::before {
+  width: 50%;
+  left: 0;
+}
+
 .burger-icon__link {
   display: block;
 }

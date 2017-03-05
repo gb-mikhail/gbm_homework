@@ -4,10 +4,22 @@ include ../_template.pug
     .bg_image.bg_image_height
         .header
             include ../common/_social-icons.pug
-            .header__burger-icon
-                a.burger-icon__link(href="#")
-                    svg.burger-icon__icon
-                        use(xlink:href="assets/sprite/sprite.svg#hamburger")
+            button.header__burger-menu(type='button')
+                span.header__burger-menu_icon
+            nav.header__nav-menu
+                ul.header__nav-list
+                    li.header__nav-item
+                        a(href="my-works.html").header__nav-link.main_h1.text_color_white.
+                            Мои работы
+                    li.header__nav-item.main_h1.text_color_white
+                        a(href="blog.html").header__nav-link.main_h1.text_color_white.
+                            Блог
+                    li.header__nav-item.main_h1.text_color_white
+                        a(href="about-me.html").header__nav-link.main_h1.text_color_white.
+                            Обо мне
+                    li.header__nav-item.main_h1.text_color_white
+                        a(href="index.html").header__nav-link.main_h1.text_color_white.
+                            Авторизация
 
         include ../common/_blog-container.pug
 

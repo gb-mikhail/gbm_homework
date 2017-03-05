@@ -7,12 +7,12 @@
                 label.sign-in__label(for='userName')
                     svg.sign-in__icon
                         use(xlink:href="assets/sprite/sprite.svg#login")
-                input#userName(name='login', type='login', placeholder='Логин')
+                input.sign-in__input#userName(name='login', type='login', placeholder='Логин')
             .sign-in__container
                 label.sign-in__label(for='userPassword')
                     svg.sign-in__icon
                         use(xlink:href="assets/sprite/sprite.svg#password")
-                input#userPassword(name='password', type='password', placeholder='Пароль')
+                input.sign-in__input#userPassword(name='password', type='password', placeholder='Пароль')
 
     .sign-in__checkbox-wrapper
         input#checkbox.sign-in__checkbox-input(type='checkbox')
@@ -20,11 +20,25 @@
             span.sign-in__checkbox-input_fake
             |   Я человек
 
+
+    .sign-in__radio-btns-wrapper
+        p.sign-in__heading.text_color_white.
+            Вы точно не робот?
+        .sign-in__radio-btns-list
+            input#radio-btn.sign-in__radio-btn-input(name="radio-btn" type="radio" value="Yes")
+            label.sign-in__radio-btn_label.text_color_white(for='radio-btn')
+                span.sign-in__radio-btn-input_fake
+                |   Да
+            input#radio-btn_2.sign-in__radio-btn-input(name="radio-btn" type="radio" value="No")
+            label.sign-in__radio-btn_label.text_color_white(for='radio-btn_2')
+                span.sign-in__radio-btn-input_fake
+                |   Не уверен
+
     ul.sign-in__list
-        li.sign-in__item
-            a.sign-in__link.sign-in__link_return.regular-text.text_color_white(href="my-works.html").
+        li#back-to-main-button.sign-in__item
+            a.sign-in__link.sign-in__link_return.regular-text.text_color_white(href="#").
                 На главную
 
         li.sign-in__item
-            a.sign-in__link.regular-text.text_color_white(href="about-me.html").
+            a.sign-in__link.regular-text.text_color_white(href="#").
                 Войти
