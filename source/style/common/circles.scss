@@ -15,7 +15,6 @@
     padding-bottom: 30px;
     width: 100%;
     max-width: 100%;
-
   }
 }
 
@@ -46,40 +45,172 @@
   transition: all 1s;
 }
 
-.circle_fill_10 {
-  stroke-dasharray: 28.26 282.6;
-  opacity: .1;
+.animate {
+  opacity: 0;
+}
+//----------start-circle-html-------------
+
+.html {
+  animation: html 2s;
+  animation-fill-mode: forwards;
 }
 
-.circle_fill_25 {
-  stroke-dasharray: 70.65 282.6;
-  opacity: .25;
+@keyframes html {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 254.34 282.6;
+    opacity: .90;
+  }
+}
+//----------End-circle-html-------------
+//----------start-circle-css-------------
+.css {
+  animation: css 2s;
+  animation-fill-mode: forwards;
 }
 
-.circle_fill_40 {
-  stroke-dasharray: 113.04 282.6;
-  opacity: .4;
+@keyframes css {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 211.95 282.6;
+    opacity: .75;
+  }
+}
+//----------End-circle-css-------------
+//----------start-circle-js-------------
+.js {
+  animation: js 2s;
+  animation-fill-mode: forwards;
 }
 
-.circle_fill_60 {
-  stroke-dasharray: 169.56 282.6;
-  opacity: .6;
+@keyframes js {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 70.65 282.6;
+    opacity: .25;
+  }
+}
+//----------End-circle-js-------------
+//----------start-circle-php-------------
+.php {
+  animation: php 2s;
+  animation-fill-mode: forwards;
 }
 
-.circle_fill_75 {
-  stroke-dasharray: 211.95 282.6;
-  opacity: .75;
+@keyframes php {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 70.65 282.6;
+    opacity: .25;
+  }
+}
+//----------End-circle-php-------------
+//----------start-circle-mysql-------------
+.mysql {
+  animation: mysql 2s;
+  animation-fill-mode: forwards;
 }
 
-.circle_fill_85 {
-  stroke-dasharray: 240.21 282.6;
-  opacity: .85;
+@keyframes mysql {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 169.56 282.6;
+    opacity: .6;
+  }
+}
+//----------End-circle-mysql-------------
+//----------start-circle-nodejs-------------
+.nodejs {
+  animation: nodejs 2s;
+  animation-fill-mode: forwards;
 }
 
-.circle_fill_90 {
-  stroke-dasharray: 254.34 282.6;
-  opacity: .9;
+@keyframes nodejs {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 113.04 282.6;
+    opacity: .4;
+  }
 }
+//----------End-circle-nodejs-------------
+//----------start-circle-mongo-------------
+.mongo {
+  animation: mongo 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mongo {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .1;
+  }
+}
+//----------End-circle-nodejs-------------
+//----------start-circle-git-------------
+.git {
+  animation: git 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes git {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 211.95 282.6;
+    opacity: .75;
+  }
+}
+//----------End-circle-git-------------
+//----------start-circle-gulp-------------
+.gulp {
+  animation: gulp 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gulp {
+  from {
+    stroke-dasharray: 28.26 282.6;
+    opacity: .0;
+  }
+
+  to {
+    stroke-dasharray: 169.56 282.6;
+    opacity: .6;
+  }
+}
+//----------End-circle-gulp-------------
 
 .circle {
   max-width: 80%;

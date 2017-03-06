@@ -46,7 +46,7 @@ var preloader = (function(){
             });
         });
 
-    }
+    };
 
     return {
         init: function () {
@@ -63,6 +63,128 @@ $(function () {
 
 //--------------------End-preloader----------------------
 
+//--------------------Start-swipe-button-animation-------------------
+//
+// $('.swipe-button').on('click', function () {
+//     $('.swipe-button__left-nav').css({
+//         'left': '0'
+//     })
+// });
+//
+// $().on('click');
+//
+// $(document).click( function(event){
+//     if( $(event.target).closest(".swipe-button__left-nav").length )
+//         return;
+//     $(".swipe-button__left-nav").fadeOut("slow");
+//     event.stopPropagation();
+// });
+
+
+$(function () {
+    $('.swipe-button').on('click', function () {
+         $('.swipe-button__left-nav').css({
+             'left': '0'
+         })
+    });
+
+    $('.swipe-button').click(function (e) {
+        var $message = $('.swipe-button__left-nav');
+
+        if ($message.css('display') != 'block') {
+            $message.show();
+
+            var yourClick = true;
+            $(document).bind('click.myEvent', function (e) {
+                if (!yourClick && $(e.target).closest('.swipe-button__left-nav').length == 0) {
+                    $message.hide();
+                    $(document).unbind('click.myEvent');
+                }
+                yourClick = false;
+            });
+        }
+
+        e.preventDefault();
+    });
+});
+
+
+//--------------------End-swipe-button-animation-------------------
+
+
+//--------------------Start-circle-animation-------------------
+
+var animateCss = (function () {
+    var checkDistance = function (scrollTop, elem) {
+        var offset = elem.offset().top;
+        var windowMargin = Math.ceil($(window).height() / 1);
+        var topBorder = offset - scrollTop - windowMargin;
+        var bottomEdge = elem.outerHeight(true) + offset;
+        var bottomBorder = scrollTop + windowMargin - bottomEdge;
+
+        return topBorder <=0 && bottomBorder <=0;
+    };
+
+    var animationActions = {
+        html : function () {
+            $(this).addClass('html');
+        },
+        css : function () {
+            $(this).addClass('css');
+        },
+        js : function () {
+            $(this).addClass('js');
+        },
+        php : function () {
+            $(this).addClass('php');
+        },
+        mysql : function () {
+            $(this).addClass('mysql');
+        },
+        nodejs : function () {
+            $(this).addClass('nodejs');
+        },
+        mongo : function () {
+            $(this).addClass('mongo');
+        },
+        git : function () {
+            $(this).addClass('git');
+        },
+        gulp : function () {
+            $(this).addClass('gulp');
+        }
+    };
+
+
+    return {
+        init : function () {
+            $(window).on('scroll', function () {
+                var scrollTop = $(window).scrollTop();
+                var elems = $('.animate');
+
+                elems.each(function () {
+                   var $this = $(this);
+
+
+                    if (checkDistance(scrollTop, $this)) {
+                        var animationType = $this.data('animation');
+                        animationActions[animationType].call($this);
+                    }
+                });
+
+            })
+        }
+    }
+
+
+})();
+
+animateCss.init();
+
+//--------------------End-circle-animation-------------------
+
+//--------------------Start-burger-button----------------------
+
 var isActive = false;
 
 $('.header__burger-menu').on('click', function() {
@@ -76,7 +198,7 @@ $('.header__burger-menu').on('click', function() {
 
     isActive = !isActive;
 });
-
+//--------------------End-burger-button----------------------
 
 //----------------- parallax-main-page--------------------
 
