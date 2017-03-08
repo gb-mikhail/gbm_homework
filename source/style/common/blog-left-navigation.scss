@@ -11,30 +11,130 @@
   }
 }
 
-.left-navigation__list {
+.swipe-button {
+  @include desktop-xl{
+    display: none;
+  }
+  @include desktop-lg{
+    display: none;
+  }
+  @include desktop{
+    display: none;
+  }
+  @include tablet{
+    display: none;
+  }
+  @include mobile{
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: -40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #253468;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+  }
+}
+
+.swipe-button__left-nav {
+  padding-top: 40px;
+  @include desktop-xl{
+    display: flex;
+  }
+  @include desktop-lg{
+    display: flex;
+  }
+  @include desktop{
+    display: flex;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    z-index: 10000;
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    background-color: #253468;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: -512px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+  }
+}
+
+.swipe-button__list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @include tablet{
+    display: none;
+  }
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 }
 
-.left-navigation__item {
-  padding: 15px 30px;
+.swipe-button__item {
   text-decoration: none;
   text-align: right;
-  color: #474b57;
   font-family: 'Roboto-Regular';
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  padding: 15px 30px;
   &:hover{
     cursor: pointer;
     color: #7296d2;
     border-right: 3px #7296d2 solid;
     padding-right: 27px;
   }
-  &:active {
-    cursor: pointer;
-    border-right: 3px #083c96 solid;
-    color: #083c96;
+  @include tablet {
+    display: flex;
+  }
+  @include mobile {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    text-align: right;
+    color: #fff;
+    opacity: .7;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 15px 30px;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      border-right: 3px #7296d2 solid;
+      opacity: 1;
+    }
+  }
+}
+
+.swipe-button__item_active {
+  border-right: 3px #083c96 solid;
+  padding: 15px 27px 15px 30px;
+  color: #083c96;
+  @include mobile {
+    border-right: 3px #fff solid;
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      border-right: 3px #fff solid;
+      opacity: 1;
+    }
   }
 }

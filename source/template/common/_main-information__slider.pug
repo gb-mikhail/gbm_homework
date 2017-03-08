@@ -13,9 +13,48 @@
             p.regular-text.text_color_white.
                 Посмотреть сайт
     .right-block__main-pic
-        img.preview-pic(src="assets/img/preview_pic.png")
+        ul.slideshow__list
+            li.slideshow__item
+                a.slideshow__link(href='#')
+                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
+            li.slideshow__item
+                a.slideshow__link(href='#')
+                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
+            li.slideshow__item
+                a.slideshow__link(href='#')
+                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
+            li.slideshow__item
+                a.slideshow__link(href='#')
+                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
     .right-block__button-box
         .right-block__prev-pic
-            img.prev-pic(src="assets/img/trialog_pic.png")
+            .slider__display
+                ul.slider__list
+                    li.slider__item
+                        img.slider__img_down(src='assets/img/trialog_pic.png', alt='')
+                    li.slider__item
+                        img.slider__img_down(src='assets/img/yoga_pic.png', alt='')
+                    li.slider__item
+                        img.slider__img_down(src='assets/img/trialog_pic.png', alt='')
+                    li.slider__item
+                        img.slider__img_down(src='assets/img/yoga_pic.png', alt='')
+            button.slider__button.slider__button-down
+                svg.arrow_down.slider__arrow-down
+                    use(xlink:href="assets/sprite/sprite.svg#arrow_down")
+
         .right-block__next-pic
-            img.next-pic(src="assets/img/trialog_pic.png")
+            .slider__display
+                ul.slider__list
+                    li.slider__item
+                        img.slider__img_up(src='assets/img/trialog_pic.png', alt='')
+                    li.slider__item
+                        img.slider__img_up(src='assets/img/yoga_pic.png', alt='')
+                    li.slider__item
+                        img.slider__img_up(src='assets/img/trialog_pic.png', alt='')
+                    li.slider__item
+                        img.slider__img_up(src='assets/img/yoga_pic.png', alt='')
+            button.slider__button.slider__button-up
+                svg.arrow_down.slider__arrow-up
+                    use(xlink:href="assets/sprite/sprite.svg#arrow_down")
+
+

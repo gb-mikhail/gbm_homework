@@ -24,7 +24,7 @@ include ../_template.pug
         include ../common/_blog-container.pug
 
         .header__down-button
-            a(href="#")
+            a.header__down-button_link(href="#")
                 svg.arrow_down
                     use(xlink:href="assets/sprite/sprite.svg#arrow_down")
 
@@ -35,20 +35,3 @@ include ../_template.pug
 
     .footer
         include ../common/_main-footer.pug
-
-button.swipe-button
-    .swipe-button__left-nav
-        ul.swipe-button__list
-            li.swipe-button__item(href="#")
-                a.swipe-button__link.
-                    Самое важное в SASS
-            li.swipe-button__item(href="#")
-                a.swipe-button__link.
-                    Приёмы в вёрстке, без которых
-                    не обходится ни один сайт
-            li.swipe-button__item(href="#")
-                a.swipe-button__link.
-                    Самый необходимый набор Gulp плагинов
-            li.swipe-button__item(href="#")
-                a.swipe-button__link.
-                    Почему я выбрал Jade

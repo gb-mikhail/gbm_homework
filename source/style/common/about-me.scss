@@ -49,6 +49,7 @@ html {
 }
 
 .header__burger-menu {
+  cursor: pointer;
   transition: 0.1s transform linear;
   position: relative;
   background: 0;
