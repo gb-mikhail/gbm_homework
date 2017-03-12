@@ -13,9 +13,10 @@
                     svg.sign-in__icon
                         use(xlink:href="assets/sprite/sprite.svg#password")
                 input.sign-in__input#userPassword(name='password', type='password', placeholder='Пароль')
+            p#myanswer
 
     .sign-in__checkbox-wrapper
-        input#checkbox.sign-in__checkbox-input(type='checkbox')
+        input#checkbox.sign-in__checkbox-input(type='checkbox' required)
         label.sign-in__checkbox-label.text_color_white(for='checkbox')
             span.sign-in__checkbox-input_fake
             |   Я человек
@@ -25,7 +26,7 @@
         p.sign-in__heading.text_color_white.
             Вы точно не робот?
         .sign-in__radio-btns-list
-            input#radio-btn.sign-in__radio-btn-input(name="radio-btn" type="radio" value="Yes")
+            input#radio-btn.sign-in__radio-btn-input(name="radio-btn" type="radio" value="Yes" )
             label.sign-in__radio-btn_label.text_color_white(for='radio-btn')
                 span.sign-in__radio-btn-input_fake
                 |   Да
@@ -40,5 +41,5 @@
                 На главную
 
         li.sign-in__item
-            a.sign-in__link.regular-text.text_color_white(href="#").
+            a#auth.sign-in__link.regular-text.text_color_white(href="#").
                 Войти

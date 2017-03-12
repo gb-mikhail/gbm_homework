@@ -1,43 +1,79 @@
 .main-information__slider
-    .left-block__wrapper
-        h2.main_h2.text_color_grey
-            |Сайт школы онлайн
-            br
-            |образования
-        .underline.underline_light_grey_color
-        p.left-block__text.
-            HTML, CSS3, JAVASCRIPT
-        a.left-block__button(href="https://loftschool.com/" target="_blank")
-            svg.link-icon
-                use(xlink:href="assets/sprite/sprite.svg#link")
-            p.regular-text.text_color_white.
-                Посмотреть сайт
+    ul.left-block__wrapper
+        li.slider-comment__block.slider__item_active
+            h2.main_h2.text_color_grey
+                |Сайт школы онлайн 1
+                br
+                |образования
+            .underline.underline_light_grey_color
+            p.left-block__text.
+                HTML, CSS3, JAVASCRIPT
+            a.left-block__button(href="https://loftschool.com/" target="_blank")
+                svg.link-icon
+                    use(xlink:href="assets/sprite/sprite.svg#link")
+                p.regular-text.text_color_white.
+                    Посмотреть сайт
+        li.slider-comment__block
+            h2.main_h2.text_color_grey
+                | Сайт школы онлайн 2
+                br
+                | образования
+            .underline.underline_light_grey_color
+            p.left-block__text.
+                HTML, CSS3, JAVASCRIPT
+            a.left-block__button(href="https://loftschool.com/" target="_blank")
+                svg.link-icon
+                    use(xlink:href="assets/sprite/sprite.svg#link")
+                p.regular-text.text_color_white.
+                    Посмотреть сайт
+        li.slider-comment__block
+            h2.main_h2.text_color_grey
+                | Сайт школы онлайн 3
+                br
+                | образования
+            .underline.underline_light_grey_color
+            p.left-block__text.
+                HTML, CSS3, JAVASCRIPT
+            a.left-block__button(href="https://loftschool.com/" target="_blank")
+                svg.link-icon
+                    use(xlink:href="assets/sprite/sprite.svg#link")
+                p.regular-text.text_color_white.
+                    Посмотреть сайт
+        li.slider-comment__block
+            h2.main_h2.text_color_grey
+                | Сайт школы онлайн 4
+                br
+                | образования
+            .underline.underline_light_grey_color
+            p.left-block__text.
+                HTML, CSS3, JAVASCRIPT
+            a.left-block__button(href="https://loftschool.com/" target="_blank")
+                svg.link-icon
+                    use(xlink:href="assets/sprite/sprite.svg#link")
+                p.regular-text.text_color_white.
+                    Посмотреть сайт
     .right-block__main-pic
         ul.slideshow__list
+            li.slideshow__item.slider__item_active
+                img.slideshow__img(src='assets/img/pic_1.png', alt='')
             li.slideshow__item
-                a.slideshow__link(href='#')
-                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
+                img.slideshow__img(src='assets/img/pic_2.png', alt='')
             li.slideshow__item
-                a.slideshow__link(href='#')
-                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
+                img.slideshow__img(src='assets/img/pic_3.png', alt='')
             li.slideshow__item
-                a.slideshow__link(href='#')
-                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
-            li.slideshow__item
-                a.slideshow__link(href='#')
-                    img.slideshow__img(src='assets/img/yoga_pic.png', alt='')
+                img.slideshow__img(src='assets/img/pic_4.png', alt='')
     .right-block__button-box
         .right-block__prev-pic
             .slider__display
                 ul.slider__list
-                    li.slider__item
-                        img.slider__img_down(src='assets/img/trialog_pic.png', alt='')
-                    li.slider__item
-                        img.slider__img_down(src='assets/img/yoga_pic.png', alt='')
-                    li.slider__item
-                        img.slider__img_down(src='assets/img/trialog_pic.png', alt='')
-                    li.slider__item
-                        img.slider__img_down(src='assets/img/yoga_pic.png', alt='')
+                    li.slider__item_down
+                        img.slider__img_down(src='assets/img/pic_1.png', alt='')
+                    li.slider__item_down
+                        img.slider__img_down(src='assets/img/pic_2.png', alt='')
+                    li.slider__item_down
+                        img.slider__img_down(src='assets/img/pic_3.png', alt='')
+                    li.slider__item_down.slider__item_active
+                        img.slider__img_down(src='assets/img/pic_4.png', alt='')
             button.slider__button.slider__button-down
                 svg.arrow_down.slider__arrow-down
                     use(xlink:href="assets/sprite/sprite.svg#arrow_down")
@@ -45,14 +81,14 @@
         .right-block__next-pic
             .slider__display
                 ul.slider__list
-                    li.slider__item
-                        img.slider__img_up(src='assets/img/trialog_pic.png', alt='')
-                    li.slider__item
-                        img.slider__img_up(src='assets/img/yoga_pic.png', alt='')
-                    li.slider__item
-                        img.slider__img_up(src='assets/img/trialog_pic.png', alt='')
-                    li.slider__item
-                        img.slider__img_up(src='assets/img/yoga_pic.png', alt='')
+                    li.slider__item_up
+                        img.slider__img_up(src='assets/img/pic_1.png', alt='')
+                    li.slider__item_up.slider__item_active
+                        img.slider__img_up(src='assets/img/pic_2.png', alt='')
+                    li.slider__item_up
+                        img.slider__img_up(src='assets/img/pic_3.png', alt='')
+                    li.slider__item_up
+                        img.slider__img_up(src='assets/img/pic_4.png', alt='')
             button.slider__button.slider__button-up
                 svg.arrow_down.slider__arrow-up
                     use(xlink:href="assets/sprite/sprite.svg#arrow_down")

@@ -6,9 +6,15 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  top: 230px;
+  @include tablet {
+    top: 160px;
+  }
+
   @include mobile {
     background-color: #fff;
     width: 100%;
+    top: 0;
   }
 }
 

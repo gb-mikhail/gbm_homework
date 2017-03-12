@@ -97,10 +97,11 @@
                   </label>
                   <input class="sign-in__input" id="userPassword" name="password" type="password" placeholder="Пароль">
                 </div>
+                <p id="myanswer"></p>
               </form>
             </div>
             <div class="sign-in__checkbox-wrapper">
-              <input class="sign-in__checkbox-input" id="checkbox" type="checkbox">
+              <input class="sign-in__checkbox-input" id="checkbox" type="checkbox" required>
               <label class="sign-in__checkbox-label text_color_white" for="checkbox"><span class="sign-in__checkbox-input_fake"></span>  Я человек</label>
             </div>
             <div class="sign-in__radio-btns-wrapper">
@@ -116,7 +117,7 @@
               <li class="sign-in__item" id="back-to-main-button"><a class="sign-in__link sign-in__link_return regular-text text_color_white" href="#">
                   На главную
                   </a></li>
-              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" href="#">Войти</a></li>
+              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" id="auth" href="#">Войти</a></li>
             </ul>
           </div>
         </div>

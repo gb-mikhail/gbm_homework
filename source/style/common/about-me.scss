@@ -70,7 +70,8 @@ html {
     position: absolute;
     margin: auto;
     width: 100%;
-    height: 0.2rem;
+    height: 4px;
+    border-radius: 4px;
     content: '';
     top: 50%;
     left: 0;
@@ -259,6 +260,18 @@ html {
   position: relative;
   flex-direction: column;
   @include mobile {
+    height: 1280px;
     justify-content: flex-start;
+  }
+}
+
+.footer_position {
+  position: absolute;
+  top: 775px;
+  @include tablet {
+    top: 746px;
+  }
+  @include mobile {
+    top: 880px;
   }
 }

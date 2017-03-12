@@ -23,7 +23,7 @@
 
 .sign-in__main-form{
   overflow: hidden;
-  :last-child {
+  &:nth-child(2) {
     margin-bottom: 0;
   }
 }
@@ -173,4 +173,11 @@
 
 .sign-in__radio-btn-input[type="radio"]:checked + .sign-in__radio-btn_label .sign-in__radio-btn-input_fake {
   content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjYuMzc1cHgiIGhlaWdodD0iNi42MDZweCIgdmlld0JveD0iMS43OTggMS44NDMgNi4zNzUgNi42MDYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMS43OTggMS44NDMgNi4zNzUgNi42MDYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxjaXJjbGUgZmlsbD0iIzA0NDdCRCIgY3g9IjUuMDAxIiBjeT0iNS4yNzciIHI9IjMuMTcyIi8+PC9zdmc+);
+}
+
+#myanswer {
+  color: #d7391e;
+  position: absolute;
+  top: 225px;
+  left: 20px;
 }
