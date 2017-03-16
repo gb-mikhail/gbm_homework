@@ -268,10 +268,17 @@ html {
 .footer_position {
   position: absolute;
   top: 775px;
+  z-index: 9999;
+
   @include tablet {
     top: 746px;
   }
   @include mobile {
     top: 880px;
   }
+}
+
+.google-map {
+  width: 100%;
+  height: 975px;
 }

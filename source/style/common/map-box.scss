@@ -7,6 +7,7 @@
   flex-direction: column;
   padding: 20px;
   top: 230px;
+  z-index: 99999;
   @include tablet {
     top: 160px;
   }
@@ -58,4 +59,5 @@
   height: 25px;
   fill: #fff;
 }
+
 

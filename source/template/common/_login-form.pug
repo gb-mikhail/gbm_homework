@@ -2,18 +2,26 @@
     h2.main_h2.text_color_white.
         авторизируйтесь
     .sign-in__wrapper
-        form.sign-in__main-form(action='', method='POST', name='contactForm')
+        form.sign-in__main-form(action='', method='POST', name='contactForm' onSubmit='return checkform(this)')
             .sign-in__container
                 label.sign-in__label(for='userName')
                     svg.sign-in__icon
                         use(xlink:href="assets/sprite/sprite.svg#login")
-                input.sign-in__input#userName(name='login', type='login', placeholder='Логин')
+                input.sign-in__input#userName(name='login', type='login', placeholder='Логин',required )
+            p#login-input__error.
+                Ошибочка
+            p#login-input__accept.
+                Все отлично
+            p#good-job
             .sign-in__container
                 label.sign-in__label(for='userPassword')
                     svg.sign-in__icon
                         use(xlink:href="assets/sprite/sprite.svg#password")
-                input.sign-in__input#userPassword(name='password', type='password', placeholder='Пароль')
-            p#myanswer
+                input.sign-in__input#userPassword(name='password', type='password', placeholder='Пароль', required)
+            p#pass-input__error.
+                Ошибочка
+            p#pass-input__accept.
+                Все отлично
 
     .sign-in__checkbox-wrapper
         input#checkbox.sign-in__checkbox-input(type='checkbox' required)
@@ -41,5 +49,5 @@
                 На главную
 
         li.sign-in__item
-            a#auth.sign-in__link.regular-text.text_color_white(href="#").
+            a#auth_1.sign-in__link.regular-text.text_color_white(href="#").
                 Войти

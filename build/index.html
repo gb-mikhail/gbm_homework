@@ -80,24 +80,31 @@
           <div class="sign-in-form">
             <h2 class="main_h2 text_color_white">авторизируйтесь</h2>
             <div class="sign-in__wrapper">
-              <form class="sign-in__main-form" action="" method="POST" name="contactForm">
+              <form class="sign-in__main-form" action="" method="POST" name="contactForm" onSubmit="return checkform(this)">
                 <div class="sign-in__container">
                   <label class="sign-in__label" for="userName">
                     <svg class="sign-in__icon">
                       <use xlink:href="assets/sprite/sprite.svg#login"></use>
                     </svg>
                   </label>
-                  <input class="sign-in__input" id="userName" name="login" type="login" placeholder="Логин">
+                  <input class="sign-in__input" id="userName" name="login" type="login" placeholder="Логин" required>
                 </div>
+                <p id="login-input__error">Ошибочка</p>
+                <p id="login-input__accept">Все отлично</p>
+                <p id="good-job"></p>
                 <div class="sign-in__container">
                   <label class="sign-in__label" for="userPassword">
                     <svg class="sign-in__icon">
                       <use xlink:href="assets/sprite/sprite.svg#password"></use>
                     </svg>
                   </label>
-                  <input class="sign-in__input" id="userPassword" name="password" type="password" placeholder="Пароль">
+                  <input class="sign-in__input" id="userPassword" name="password" type="password" placeholder="Пароль" required>
                 </div>
-                <p id="myanswer"></p>
+                <p id="pass-input__error">Ошибочка</p>
+                <p id="pass-input__accept">
+                  Все отлично
+                  
+                </p>
               </form>
             </div>
             <div class="sign-in__checkbox-wrapper">
@@ -117,7 +124,7 @@
               <li class="sign-in__item" id="back-to-main-button"><a class="sign-in__link sign-in__link_return regular-text text_color_white" href="#">
                   На главную
                   </a></li>
-              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" id="auth" href="#">Войти</a></li>
+              <li class="sign-in__item"><a class="sign-in__link regular-text text_color_white" id="auth_1" href="#">Войти</a></li>
             </ul>
           </div>
         </div>

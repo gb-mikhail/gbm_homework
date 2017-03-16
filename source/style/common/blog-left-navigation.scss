@@ -1,15 +1,15 @@
-.left-navigation {
-  height: auto;
-  width: 37%;
-  background-color: #faf8f0;
-  padding-top: 50px;
-  @include tablet {
-    display: none;
-  }
-  @include mobile {
-    display: none;
-  }
-}
+//.left-navigation {
+//  height: auto;
+//  width: 37%;
+//  background-color: #faf8f0;
+//  padding-top: 50px;
+//  @include tablet {
+//    display: none;
+//  }
+//  @include mobile {
+//    display: none;
+//  }
+//}
 
 .swipe-button {
   @include desktop-xl{
@@ -22,7 +22,18 @@
     display: none;
   }
   @include tablet{
-    display: none;
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: -40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #253468;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
   }
   @include mobile{
     display: flex;
@@ -52,12 +63,23 @@
     display: flex;
   }
   @include tablet {
-    display: none;
+    z-index: 10000;
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    background-color: #253468;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: -512px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
   }
   @include mobile {
     z-index: 10000;
     display: flex;
-    width: 80%;
+    width: 60%;
     height: 100vh;
     background-color: #253468;
     box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
@@ -70,12 +92,27 @@
   }
 }
 
+.fake-left-navigation {
+  display: none;
+  width: 31.78%;
+  height: 100%;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
 .swipe-button__list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   @include tablet{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
   @include mobile{
     display: flex;
@@ -101,10 +138,24 @@
   }
   @include tablet {
     display: flex;
+    text-decoration: none;
+    text-align: right;
+    color: #fff;
+    opacity: .7;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 15px 30px;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      border-right: 3px #7296d2 solid;
+      opacity: 1;
+    }
   }
   @include mobile {
     display: flex;
-    padding: 15px;
     text-decoration: none;
     text-align: right;
     color: #fff;
@@ -127,6 +178,16 @@
   border-right: 3px #083c96 solid;
   padding: 15px 27px 15px 30px;
   color: #083c96;
+  @include tablet {
+      border-right: 3px #fff solid;
+      color: #fff;
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+        border-right: 3px #fff solid;
+        opacity: 1;
+      }
+  }
   @include mobile {
     border-right: 3px #fff solid;
     color: #fff;
@@ -137,4 +198,10 @@
       opacity: 1;
     }
   }
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  width: 29.7%;
 }

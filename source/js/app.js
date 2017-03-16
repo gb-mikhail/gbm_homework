@@ -61,12 +61,33 @@ preloader.init();
 
 //--------------------End-preloader
 
+//--------------------Start-swipe-position-on-scroll
 
+$(function($) {
+    $(window).scroll(function(){
+        if (window.innerWidth >= 780) {
+            if($(this).scrollTop()>600){
+                $('.swipe-button__left-nav').addClass('menu-fixed');
+                $('.fake-left-navigation').css({'display' : 'flex'});
+            }
+            else if ($(this).scrollTop()<600){
+                $('.swipe-button__left-nav').removeClass('menu-fixed');
+                $('.fake-left-navigation').css({'display' : 'none'});
+            }
+        }else {
+            $('.swipe-button__left-nav').removeClass('menu-fixed');
+            $('.fake-left-navigation').css({'display' : 'none'});
+        }
+    });
+});
+
+
+//--------------------End-swipe-position-on-scroll
 
 //--------------------start-Swipe-navigation
 var swipe = (function(){
 
-    var swipe = function() {
+    var swipe = function () {
         $('.swipe-button__item').on('click', function () {
             $(this).addClass('swipe-button__item_active').siblings().removeClass('swipe-button__item_active');
             $('body').animate({scrollTop: $('.main_h2').eq($(this).index()).offset().top}, 1000);
@@ -79,6 +100,8 @@ var swipe = (function(){
 
 swipe.init();
 //--------------------End-swipe-navigation
+
+
 
 //--------------------Start-swipe-button-animation
 var swipeAnimation = (function () {
@@ -329,17 +352,101 @@ $('#back-to-main-button').on('click', function () {
 $().on('click');
 //----------------- End-auth-button-main-page
 
-//--------------------Start-Enter-button
-var enterButton = document.querySelector('#auth');
-var answer = document.querySelector('#myanswer');
+//--------------------Start-Entry-button (Ajax)
 
-enterButton.addEventListener('click', function () {
-    var xhr = new XMLHttpRequest();
+var enterButton = $('#auth_1');
 
-    xhr.open('GET', 'test.txt');
-    xhr.send();
-    xhr.addEventListener('load', function () {
-        answer.innerText = xhr.responseText;
-    });
+enterButton.on('click', function () {
+
+    var validName = false;
+    var validPass = false;
+    var validCheckbox = false;
+    var validRadioBtn = false;
+    var name = $('#userName').val();
+    var pass = $('#userPassword').val();
+    var checkbox = $('#checkbox').prop('checked');
+    var radioBtn = $('#radio-btn').prop('checked');
+
+    if (name == "") {
+        console.log('bad');
+        $('#login-input__error').css({'display':'block'});
+        $('#login-input__accept').css({'display':'none'});
+        validName = false;
+    } else {
+        console.log('good');
+        $('#login-input__error').css({'display':'none'});
+        $('#login-input__accept').css({'display':'block'});
+        validName = true;
+    }
+    if (pass == "") {
+        console.log('bad');
+        $('#pass-input__error').css({'display':'block'});
+        $('#pass-input__accept').css({'display':'none'});
+        validPass = false;
+    } else {
+        console.log('good');
+        $('#pass-input__error').css({'display':'none'});
+        $('#pass-input__accept').css({'display':'block'});
+        validPass = true;
+    }
+    if (checkbox == true) {
+        console.log('good-checked');
+        validCheckbox = true;
+    } else {
+        console.log('bad-cheked');
+        validCheckbox = false;
+    }
+    if (radioBtn == true) {
+        console.log('good-radio-btn');
+        validRadioBtn = true;
+    } else {
+        console.log('bad-radio-btn');
+        validRadioBtn = false;
+    }
+    if (validName == true && validPass == true && validCheckbox == true && validRadioBtn == true) {
+        console.log('Good Game Bro :)');
+    }
 });
-//--------------------End-Enter-button
+
+//--------------------End-Entry-button (Ajax)
+
+//--------------------Start-Google-map
+
+function initMap () {
+    var pointer = new google.maps.LatLng(49.541998, 25.609281),
+        center = new google.maps.LatLng(49.544541, 25.594840);
+
+    var styles = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#4369aa"},{"visibility":"on"}]}];
+
+    var styledMap = new google.maps.StyledMapType(styles,
+        {name: "Styled Map"});
+
+    var mapSettings = {
+        center: center,
+        scrollwheel: false,
+        zoom: 15,
+        mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_TOP
+        },
+        streetViewControl: false
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), mapSettings);
+
+    var marker = new google.maps.Marker({
+        icon: 'assets/img/map_marker_n.png',
+        position: pointer,
+        map: map,
+        title: "I'm here!",
+        animation: google.maps.Animation.BOUNCE
+    });
+
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
+}
+
+//--------------------End-Google-map
